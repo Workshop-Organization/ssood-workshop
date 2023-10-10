@@ -57,6 +57,13 @@ coprocessor:
   router: # This coprocessor hooks into the `RouterService`
     response: # By including this key, the `RouterService` sends a coprocessor request whenever it first receives a client request.
       body: true # By including this key the co-processor can modify the body of the response
+preview_persisted_queries:
+  enabled: true
+  safelist: 
+    enabled: true
+    require_id: false
+apq:
+  enabled: false
 
 # PQL Module
 preview_persisted_queries:
